@@ -34,7 +34,7 @@ def update_text(parametro):
         print("Texto atualizado com sucesso!")
         
 def main():
-    if len(sys.argv) < 2 or len(sys.argv) > 3:
+    if len(sys.argv) < 2:
         print("Uso: desafio.py [opção] [parâmetro]")
         return
     option = sys.argv[1]
@@ -44,8 +44,14 @@ def main():
         if len(sys.argv) < 3:
             print("Você precisa fornecer um parâmetro para a opção -d.")
             return
+        if len(sys.argv) > 3:
+            print("Uso: desafio.py [opção] [parâmetro]")
+            return
         update_file(sys.argv[2])
     elif option == "-t":
+        if len(sys.argv) > 3:
+            print("Texto precisa estar entre aspas para ser alterado.")
+            return
         if len(sys.argv) < 3:
             print("Você precisa fornecer um parâmetro para a opção -t.")
             return

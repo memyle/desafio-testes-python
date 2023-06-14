@@ -7,3 +7,4 @@ python desafio.py -d
 python desafio.py -t Novo texto -t:
 python desafio.py -d 30 30
 python desafio.py 👍
+python desafio.py -t
