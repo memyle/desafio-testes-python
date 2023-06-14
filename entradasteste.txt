@@ -1,0 +1,9 @@
+python desafio.py -l 
+python desafio.py -d 10
+python desafio.py -t "Novo texto -t:"
+python desafio.py
+python desafio.py -a
+python desafio.py -d
+python desafio.py -t Novo texto -t:
+python desafio.py -d 30 30
+python desafio.py 👍
